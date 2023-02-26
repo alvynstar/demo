@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="500243301b9561106daf6575624bcb01" label="NIT" max_length="40" name="x_981331_needit_nit" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Description" mandatory="true" max_length="1000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Requested for" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Short description" max_length="125" name="short_description" type="string"/>
+        <element choice="1" label="State" max_length="40" name="state" type="choice">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="What needed" mandatory="true" max_length="40" name="what_needed" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Office Supplies" value="office_supplies"/>
+                <element inactive_on_update="false" label="Team Building" value="team_building"/>
+                <element inactive_on_update="false" label="Team Funds" value="team_funds"/>
+            </choice>
+        </element>
+        <element label="When needed" max_length="40" name="when_needed" type="calendar_date_time"/>
+        <index name="index">
+            <element name="requested_for"/>
+        </index>
+    </element>
+</database>
