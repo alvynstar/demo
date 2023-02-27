@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_section caption="Description" section_id="583747741b9561106daf6575624bcb47" sys_domain="global" table="x_981331_needit_nit" version="3" view="">
+    <sys_ui_section caption="Log" section_id="74d271411b11a1106daf6575624bcb31" sys_domain="global" table="x_981331_needit_nit" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>short_description</element>
+            <element>work_notes</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2023-02-27 02:19:28</sys_created_on>
-            <sys_id>78d271411b11a1106daf6575624bcb48</sys_id>
+            <sys_id>f4d271411b11a1106daf6575624bcb52</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="Description" display_value="Description" name="x_981331_needit_nit" sys_domain="global" view="Default view">583747741b9561106daf6575624bcb47</sys_ui_section>
+            <sys_ui_section caption="Log" display_value="Log" name="x_981331_needit_nit" sys_domain="global" view="Default view">74d271411b11a1106daf6575624bcb31</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2023-02-27 02:19:28</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>description</element>
+            <element>activity.xml</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2023-02-27 02:19:28</sys_created_on>
-            <sys_id>f8d271411b11a1106daf6575624bcb48</sys_id>
+            <sys_id>78d271411b11a1106daf6575624bcb52</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Description" display_value="Description" name="x_981331_needit_nit" sys_domain="global" view="Default view">583747741b9561106daf6575624bcb47</sys_ui_section>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="Log" display_value="Log" name="x_981331_needit_nit" sys_domain="global" view="Default view">74d271411b11a1106daf6575624bcb31</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2023-02-27 02:19:28</sys_updated_on>
             <sys_user/>
-            <type/>
+            <type>formatter</type>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
-            <caption>Description</caption>
+            <caption>Log</caption>
             <header>false</header>
             <name>x_981331_needit_nit</name>
             <roles/>
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-02-26 13:49:35</sys_created_on>
+            <sys_created_on>2023-02-27 02:19:27</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>583747741b9561106daf6575624bcb47</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_id>74d271411b11a1106daf6575624bcb31</sys_id>
+            <sys_mod_count>0</sys_mod_count>
             <sys_name>x_981331_needit_nit</sys_name>
             <sys_overrides/>
             <sys_package display_value="needIT" source="x_981331_needit">b9dd36f81b5561106daf6575624bcbc1</sys_package>
             <sys_policy/>
             <sys_scope display_value="needIT">b9dd36f81b5561106daf6575624bcbc1</sys_scope>
-            <sys_update_name>sys_ui_section_583747741b9561106daf6575624bcb47</sys_update_name>
+            <sys_update_name>sys_ui_section_74d271411b11a1106daf6575624bcb31</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-02-26 15:26:26</sys_updated_on>
+            <sys_updated_on>2023-02-27 02:19:27</sys_updated_on>
             <sys_user/>
             <title>false</title>
             <view display_value="Default view" name="NULL">Default view</view>

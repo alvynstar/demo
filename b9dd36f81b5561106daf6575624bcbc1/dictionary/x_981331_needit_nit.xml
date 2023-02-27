@@ -1,20 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="500243301b9561106daf6575624bcb01" label="NIT" max_length="40" name="x_981331_needit_nit" type="collection">
+    <element audit="true" db_object_id="500243301b9561106daf6575624bcb01" label="NIT" max_length="40" name="x_981331_needit_nit" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Description" mandatory="true" max_length="1000" name="description" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Requested for" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="Short description" max_length="125" name="short_description" type="string"/>
-        <element choice="1" label="State" max_length="40" name="state" type="choice">
-            <choice/>
-        </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="What needed" mandatory="true" max_length="40" name="what_needed" type="choice">
+        <element choice="3" default="human resource" label="Request Type" max_length="40" name="request_type" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Office Supplies" value="office_supplies"/>
-                <element inactive_on_update="false" label="Team Building" value="team_building"/>
-                <element inactive_on_update="false" label="Team Funds" value="team_funds"/>
+                <element inactive="true" inactive_on_update="true" label="-- New choice --" sequence="0" value="-- New choice --"/>
+                <element inactive_on_update="false" label="Facilities" sequence="0" value="facilities"/>
+                <element inactive_on_update="false" label="Legal" sequence="1" value="legal"/>
+                <element inactive_on_update="false" label="Human Resource" sequence="2" value="human resource"/>
+                <element inactive_on_update="false" label="Department choice" sequence="3" value="department choice"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Short description" max_length="125" name="short_description" type="string"/>
+        <element choice="1" default="requested" label="State" max_length="40" name="state" reference="task" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Requested" sequence="0" value="requested"/>
+                <element inactive_on_update="false" label="Awaiting Approval" sequence="1" value="awaiting approval"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+                <element inactive_on_update="false" label="Awaiting feedback" sequence="3" value="awaiting feedback"/>
+                <element inactive_on_update="false" label="Withdrawn" sequence="4" value="withdrawn"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal 1" label="What needed" mandatory="true" max_length="40" name="what_needed" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Human Resource 1" sequence="0" value="human resource 1"/>
+                <element inactive="true" inactive_on_update="true" label="Office Supplies" sequence="0" value="office_supplies"/>
+                <element inactive_on_update="false" label="Human Resource 2" sequence="1" value="human resource 2"/>
+                <element inactive="true" inactive_on_update="true" label="Team Building" sequence="1" value="team_building"/>
+                <element inactive_on_update="false" label="Facilities 1" sequence="2" value="facilities 1"/>
+                <element inactive="true" inactive_on_update="true" label="Team Funds" sequence="2" value="team_funds"/>
+                <element inactive_on_update="false" label="Facilities 2" sequence="3" value="facilities 2"/>
+                <element inactive_on_update="false" label="Legal 1" sequence="4" value="legal 1"/>
+                <element inactive_on_update="false" label="Legal 2" sequence="5" value="legal 2"/>
+                <element inactive_on_update="false" label="Department Choice 1" sequence="6" value="department choice 1"/>
+                <element inactive_on_update="false" label="Department Choice 2" sequence="7" value="department choice 2"/>
             </choice>
         </element>
         <element label="When needed" max_length="40" name="when_needed" type="calendar_date_time"/>
+        <element label="Work Notes" max_length="10000" name="work_notes" type="string"/>
         <index name="index">
             <element name="requested_for"/>
         </index>
